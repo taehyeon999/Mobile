@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".newJoin"
+    android:background="@color/white">
+    <!--이 텍스트뷰 액션바로 바꾸고 위치조정 다시해야-->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="회원가입"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#205F9B"/>
+
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--        android:id="@+id/appbar"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/forMargin"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <EditText
+                android:layout_width="370dp"
+                android:layout_height="70dp"
+                android:background="@drawable/linebox"
+                android:translationX="20dp"
+                android:translationY="20dp"
+                android:paddingLeft="80dp"
+                android:textSize="25dp"
+                android:id="@+id/id"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/id"
+                android:translationX="30dp"
+                android:translationY="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:translationX="90dp"
+                android:translationY="35dp"
+                android:textSize="25dp"
+                android:text="아이디"
+                android:id="@+id/tmpIdText"/>
+
+            <EditText
+                android:layout_width="370dp"
+                android:layout_height="70dp"
+                android:background="@drawable/linebox"
+                android:translationX="20dp"
+                android:translationY="110dp"
+                android:id="@+id/password"
+                android:paddingLeft="80dp"
+                android:textSize="25dp"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/password"
+                android:translationX="30dp"
+                android:translationY="120dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:translationX="90dp"
+                android:translationY="125dp"
+                android:textSize="25dp"
+                android:text="비밀번호"
+                android:id="@+id/tmpPasswordText"/>
+
+        </FrameLayout>
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="가입하기"
+            android:textSize="30dp"
+            android:background="@drawable/mybutton"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:id="@+id/joinFinishBtn"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ch"
+                android:translationX="10dp"
+                android:translationY="80dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/logo"
+                android:translationX="100dp"
+                android:translationY="120dp"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

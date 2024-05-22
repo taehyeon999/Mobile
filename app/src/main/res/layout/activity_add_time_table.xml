@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTimeTable"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="학과"
+        android:layout_marginLeft="10dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:textSize="25dp"
+            android:text="에너지전자공학과"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/linebox"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/major"
+            android:translationX="335dp"
+            android:translationY="5dp"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="학년"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/grade"
+        android:text="선택"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/linebox"
+        android:padding="10dp"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="최대 수강 학점"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/maxCredit"
+        android:padding="10dp"
+        android:textSize="25dp"
+        android:text="선택"
+        android:background="@drawable/linebox"
+        android:layout_marginHorizontal="10dp"/>
+    
+    <android.widget.Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:textSize="25dp"
+        android:background="@drawable/mybutton"
+        android:layout_margin="40dp"
+        android:textColor="@color/white"
+        android:id="@+id/okayBtn"
+        android:layout_gravity="right"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ch"
+            android:translationX="10dp"
+            android:translationY="80dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:translationX="100dp"
+            android:translationY="120dp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

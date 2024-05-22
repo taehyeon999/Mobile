@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffff">
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--        android:id="@+id/appbar"/>-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="50dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:background="@drawable/linebox"
+            android:translationX="20dp"
+            android:translationY="20dp"
+            android:paddingLeft="80dp"
+            android:id="@+id/id"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/id"
+            android:translationX="30dp"
+            android:translationY="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="90dp"
+            android:translationY="30dp"
+            android:textSize="30dp"
+            android:text="아이디"/>
+
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:background="@drawable/linebox"
+            android:translationX="20dp"
+            android:translationY="100dp"
+            android:id="@+id/password"
+            android:paddingLeft="80dp"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/password"
+            android:translationX="30dp"
+            android:translationY="110dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="90dp"
+            android:translationY="110dp"
+            android:textSize="30dp"
+            android:text="비밀번호"/>
+
+    </FrameLayout>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/white"
+        android:id="@+id/loginBtn"/>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/white"
+        android:id="@+id/newJoinBtn"/>
+
+
+
+
+
+
+</LinearLayout>
